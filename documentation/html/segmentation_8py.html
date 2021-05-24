@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Data Prediction app: segmentation.py File Reference</title>
+<title>Data Prediction Code: segmentation.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Data Prediction app
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Data Prediction Code
    </div>
-   <div id="projectbrief">Data prediction app software developed with TensorFlow-Keras and OpenCV</div>
+   <div id="projectbrief">Data prediction code developed with TensorFlow-Keras and OpenCV</div>
   </td>
  </tr>
  </tbody>
@@ -85,19 +84,19 @@ Variables</h2></td></tr>
 <tr class="separator:a7670eaa7d24cc02434c185a71e7d5b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5475eb53060c88b8f3f4cfc9a8220d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#ac5475eb53060c88b8f3f4cfc9a8220d2">segmentation.model</a> = models.load_model(&quot;files/model.h5&quot;)</td></tr>
 <tr class="separator:ac5475eb53060c88b8f3f4cfc9a8220d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5441d2389f44c91c6bdfe7573af8a5e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a5441d2389f44c91c6bdfe7573af8a5e8">segmentation.res1</a> = np.zeros((360, 640, 3), np.uint8)</td></tr>
-<tr class="separator:a5441d2389f44c91c6bdfe7573af8a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a899dfc268aef25fd6ff69cdcd52a7a28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a899dfc268aef25fd6ff69cdcd52a7a28">segmentation.res2</a> = np.zeros((360, 640, 3), np.uint8)</td></tr>
-<tr class="separator:a899dfc268aef25fd6ff69cdcd52a7a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489a51afea7676c69318deb3509ac97f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a489a51afea7676c69318deb3509ac97f">segmentation.result1</a> = np.zeros((360, 640, 3), np.uint8)</td></tr>
+<tr class="separator:a489a51afea7676c69318deb3509ac97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0411609052d531a965425cf5fe1629"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a6b0411609052d531a965425cf5fe1629">segmentation.result2</a> = np.zeros((360, 640, 3), np.uint8)</td></tr>
+<tr class="separator:a6b0411609052d531a965425cf5fe1629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71334d6e23585814a3d0ff6754da00bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a71334d6e23585814a3d0ff6754da00bf">segmentation.vid</a> = cv2.VideoCapture(images[i])</td></tr>
 <tr class="separator:a71334d6e23585814a3d0ff6754da00bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97f8b7b45fba529b363fb0050335d009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a97f8b7b45fba529b363fb0050335d009">segmentation.fourcc</a> = cv2.VideoWriter_fourcc(*'MP4V')</td></tr>
 <tr class="separator:a97f8b7b45fba529b363fb0050335d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8839fe8af3517745df685da8e96655"><td class="memItemLeft" align="right" valign="top">tuple&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a1f8839fe8af3517745df685da8e96655">segmentation.str_file</a> = (images[i].split('/')[-1]).split('.')[0]</td></tr>
 <tr class="separator:a1f8839fe8af3517745df685da8e96655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9abee9f765aa50f9d05820f20e05d70b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a9abee9f765aa50f9d05820f20e05d70b">segmentation.filename</a> = &quot;result/color/%s.mp4&quot; % (str_file)</td></tr>
+<tr class="memitem:a9abee9f765aa50f9d05820f20e05d70b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a9abee9f765aa50f9d05820f20e05d70b">segmentation.filename</a> = &quot;results/color/%s.mp4&quot; % (str_file)</td></tr>
 <tr class="separator:a9abee9f765aa50f9d05820f20e05d70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39a02ef9eda157efae01a6b590daf52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#aa39a02ef9eda157efae01a6b590daf52">segmentation.filename1</a> = &quot;result/mask%s-mask-predicted.mp4&quot; % (str_file)</td></tr>
+<tr class="memitem:aa39a02ef9eda157efae01a6b590daf52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#aa39a02ef9eda157efae01a6b590daf52">segmentation.filename1</a> = &quot;results/mask%s-mask-predicted.mp4&quot; % (str_file)</td></tr>
 <tr class="separator:aa39a02ef9eda157efae01a6b590daf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559eff341bf50bdb2150910757af835e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a559eff341bf50bdb2150910757af835e">segmentation.out1</a> = cv2.VideoWriter(filename, fourcc, 30.0, (640, 360))</td></tr>
 <tr class="separator:a559eff341bf50bdb2150910757af835e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,8 +112,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac019bcc698b2b4bc570d5055e5f03d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accfacd303c9d79831b03e55dc8575e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#accfacd303c9d79831b03e55dc8575e23">segmentation.t1</a> = time()</td></tr>
 <tr class="separator:accfacd303c9d79831b03e55dc8575e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af244130ce86cb168bcb7f753d69970a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#af244130ce86cb168bcb7f753d69970a7">segmentation.res</a> = model.predict(np.expand_dims(image, axis=0))[0]</td></tr>
-<tr class="separator:af244130ce86cb168bcb7f753d69970a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e1dae15670b119b011c229211190bf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesegmentation.html#a73e1dae15670b119b011c229211190bf">segmentation.result</a> = model.predict(np.expand_dims(image, axis=0))[0] &gt; 0.5</td></tr>
+<tr class="separator:a73e1dae15670b119b011c229211190bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

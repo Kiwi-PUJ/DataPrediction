@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['model_8',['model',['../namespacesegmentation.html#ac5475eb53060c88b8f3f4cfc9a8220d2',1,'segmentation']]]
+  ['out1_8',['out1',['../namespacesegmentation.html#a559eff341bf50bdb2150910757af835e',1,'segmentation']]],
+  ['out2_9',['out2',['../namespacesegmentation.html#a90f67a9c208d57466dc5771d2652212d',1,'segmentation']]]
 ];
